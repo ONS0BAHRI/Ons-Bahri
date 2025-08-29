@@ -490,7 +490,7 @@ button:focus {
     }
     
     .home_right_img img.responsive-img {
-        max-width: 70%;
+        max-width: 100%;
         margin: 0 auto;
     }
 }
@@ -521,7 +521,7 @@ button:focus {
     }
     
     .home_right_img img.responsive-img {
-        max-width: 70%;
+        max-width: 100%;
     }
 }
 
