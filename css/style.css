@@ -435,6 +435,7 @@ button:focus {
       .home_banner_area .banner_inner .banner_content .primary_btn {
         margin-right: 20px; }
 
+        
 .banner_area {
   position: relative;
   z-index: 1;
@@ -3349,3 +3350,70 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* Make images smaller on tablets and phones */
+
+
+
+.home_banner_area,
+.about_area {
+    padding-top: 0;   /* remove top padding */
+    padding-bottom: 0; /* optional, remove bottom padding if needed */
+}
+
+.home_right_img,
+.about_img {
+    margin: 0;  /* remove extra margins */
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Optional: shrink images for tablets and phones */
+@media (max-width: 992px) {
+    .home_right_img img,
+    .about_img img {
+        max-width: 80%;
+    }
+}
+@media (max-width: 576px) {
+    .home_right_img img,
+    .about_img img {
+        max-width: 70%;
+    }
+}
+.home_banner_area,
+.about_area {
+    padding-top: 0 !important;    /* remove top padding */
+    padding-bottom: 0 !important; /* remove bottom padding */
+}
+
+.banner_inner,
+.about_area .container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.home_banner_area .row,
+.about_area .row {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.home_right_img,
+.about_img {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.home_right_img img,
+.about_img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
