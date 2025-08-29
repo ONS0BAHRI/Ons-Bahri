@@ -137,11 +137,48 @@ button:focus {
 ============================================================================================ */
 /* Start Gradient Area css
 ============================================================================================ */
-.gradient-bg, .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link, .blog_right_sidebar .widget_title, .blog_right_sidebar .newsletter_widget .bbtns, .blog_right_sidebar .tag_cloud_widget ul li a:hover, .blog-pagination .page-item.active .page-link, .blog-pagination .page-link:hover, .comments-area .btn-reply:hover {
+.gradient-bg, .header_area .nav .nav-item.submenu ul .nav-item:hover .nav-link, .blog_right_sidebar .widget_title, .blog_right_sidebar .newsletter_widget .bbtns, .blog_right_sidebar .tag_cloud_widget ul li a:hover, .blog-pagination .page-item.active .page-link, .blog-pagination .page-link:hover, .comments-area .btn-reply:hover {
   background: -webkit-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
   background: -moz-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
   background: -o-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
   background: linear-gradient(90deg, #4458dc 0%, #854fee 100%); }
+
+  .navbar {
+  background-color: #ffffff !important;
+}
+
+.navbar .nav-link {
+  color: #000000 !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-item.active .nav-link {
+  color: #000000 !important;
+}
+.navbar .navbar-brand img {
+  max-height: 50px; /* so logo doesn’t stretch */
+}
+
+/* Dropdown menu background white, text black */
+.navbar .dropdown-menu {
+  background-color: #ffffff !important;
+}
+.icon-bar {
+    background-color: black; /* makes the bars black */
+    display: block;          /* ensures they appear as blocks */
+    width: 22px;             /* adjust width */
+    height: 2px;             /* adjust height */
+    margin: 4px 0;           /* spacing between bars */
+}
+.navbar .dropdown-menu .nav-link {
+  color: #000000 !important;
+}
+
+.navbar .dropdown-menu .nav-link:hover {
+  background-color: #f0f0f0 !important;
+  color: #000000 !important;
+}
 
 .border-gradient {
   border-image: -webkit-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
@@ -2932,15 +2969,17 @@ h6 {
     bottom: 6px;
     position: relative; }
 
-  .navbar-toggler span {
+ .navbar-toggler span {
     display: block;
     width: 25px;
     height: 3px;
-    background: #fff;
+    background: #000;  /* make bars black */
     margin: auto;
     margin-bottom: 4px;
     transition: all 400ms linear;
-    cursor: pointer; }
+    cursor: pointer;
+}
+
 
   .navbar .container {
     padding-left: 15px;
@@ -3003,6 +3042,12 @@ h6 {
 
   .home_right_img {
     display: none; }
+
+
+    .home_right_img,
+.about_img {
+    display: block !important;
+}
 
   /* Footer Area css
   ============================================================================================ */
